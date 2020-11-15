@@ -4,4 +4,3 @@ interface Toggle {
     val name: String
     val type: String
 }
-
