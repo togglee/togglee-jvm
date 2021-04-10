@@ -5,4 +5,4 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 @SerialName("context")
-data class ContextToggle(override var name: String, override var type: String, var conditions: Conditions): Toggle
+data class ContextToggle(override var name: String, override var type: String, var conditions: Conditions) : Toggle

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test
 internal class ToggleApiClientTest {
     private var sut: ToggleApiClient = ToggleApiClient()
     private val someJson = "{\"toggles\":[{\"name\":\"propPepito\",\"type\":\"release\",\"value\":false}," +
-            "{\"name\":\"propJoselito\",\"type\":\"release\",\"value\":true}]}"
+        "{\"name\":\"propJoselito\",\"type\":\"release\",\"value\":true}]}"
 
     @BeforeEach
     fun setup() {
@@ -21,8 +21,7 @@ internal class ToggleApiClientTest {
         every { client.executeRequest(any()).data } returns someJson.toByteArray()
 
         FuelManager.instance.client = client
-
-   }
+    }
 
     @Test
     fun testApiClientReturnOk() {

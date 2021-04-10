@@ -5,4 +5,4 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 @SerialName("release")
-data class ReleaseToggle(override var name: String, override var type: String, var value: String): Toggle
+data class ReleaseToggle(override var name: String, override var type: String, var value: String) : Toggle
