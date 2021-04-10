@@ -1,6 +1,6 @@
 package com.togglee.kotlin.models
 
 interface Toggle {
-    val name: String
-    val type: String
+    var name: String
+    var type: String
 }
