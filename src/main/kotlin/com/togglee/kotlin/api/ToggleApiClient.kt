@@ -7,10 +7,9 @@ class ToggleApiClient {
         const val baseUrl = "https://gist.githubusercontent.com/kanekotic/c469f99bef5a5c0634b4a94a4acd6546/raw/toggles"
     }
 
-    fun getToggles() {
-        get(baseUrl)
-            .responseString { request, response, result ->
-                print(result)
-            }
+    fun getToggles(url: String) {
+        get(url).responseString { _, _, result ->
+            print(result)
+        }
     }
 }

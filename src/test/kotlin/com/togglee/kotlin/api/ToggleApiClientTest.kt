@@ -25,6 +25,6 @@ internal class ToggleApiClientTest {
 
     @Test
     fun testApiClientReturnOk() {
-        sut.getToggles()
+        sut.getToggles(ToggleApiClient.baseUrl)
     }
 }
